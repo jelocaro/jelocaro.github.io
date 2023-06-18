@@ -1,0 +1,273 @@
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 800px;
+    height: 800px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #24292e;
+}
+
+.navbar {
+    background-color: #333;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+    color: white;
+}
+
+.navbar i {
+    margin-right: 10px;
+}
+
+.image-container img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-top: -200px;
+    /* Ajusta el valor según sea necesario */
+}
+
+.image-container .small-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 280px;
+    border-radius: 10px;
+    margin-left: -400px;
+}
+
+#small-image-1 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 280px;
+    border-radius: 10px;
+    margin-left: -400px;
+}
+
+#small-image-2 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 280px;
+    border-radius: 10px;
+    margin-left: 10px;
+    /* Ajusta el valor según sea necesario */
+}
+
+#small-image-3 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 610px;
+    border-radius: 10px;
+    margin-left: -410px;
+}
+
+#small-image-4 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 610px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#additional-image {
+    width: 380px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 170px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+#additionalBelow {
+    width: 380px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 170px;
+    position: absolute;
+    right: 15px;
+    top: 300px;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ccc;
+    font-size: 24px;
+}
+
+#texto {
+    margin-left: 20px;
+    position: relative;
+    top: 30px;
+    color: #11aa92;
+}
+
+.navbar {
+    position: fixed;
+    top: 80px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #2d3339;
+    color: #11aa92;
+    padding: 10px;
+    width: 62%;
+    font-weight: bold;
+    font-size: large
+}
+
+.iconos {
+    position: fixed;
+    top: 30px;
+    z-index: 10000;
+    color: white;
+}
+
+.texto {
+    position: fixed;
+    top: -25px;
+    z-index: 10000;
+    right: 930px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #11aa92;
+}
+
+.input {
+    position: fixed;
+    top: 5px;
+    z-index: 10000;
+    right: 480px;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+#search-input {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1c2126;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#search-input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#search-input::placeholder {
+    color: #888;
+}
+
+.input i {
+    position: absolute;
+    top: 60%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 24px;
+}
+
+
+.icon-container {
+    position: fixed;
+    top: 20px;
+    right: 900px;
+    z-index: 100000;
+}
+
+.icon-container .icon {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.iconCampana {
+    position: fixed;
+    right: 420px;
+    width: 30px;
+    height: 100px;
+    top: 35px;
+    color: #11aa92;
+}
+
+.iconMensaje {
+    position: fixed;
+    right: 380px;
+    width: 30px;
+    height: 100px;
+    top: 35px;
+    color: #11aa92;
+}
+
+.iconregalo {
+    position: fixed;
+    right: 340px;
+    width: 30px;
+    height: 100px;
+    top: 35px;
+    color: #11aa92;
+}
+
+.iconperson {
+    position: fixed;
+    right: 250px;
+    width: 30px;
+    height: 100px;
+    top: 35px;
+    color: #11aa92;
+}
+
+/* Media Query para pantallas de hasta 600px */
+/* Media Query para pantallas de hasta 600px */
+@media (max-width: 600px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-container img,
+    .image-container .small-image,
+    #small-image-1,
+    #small-image-2,
+    #small-image-3,
+    #small-image-4,
+    #additional-image,
+    #additionalBelow {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    #additional-image,
+    #additionalBelow {
+        position: static;
+    }
+}
